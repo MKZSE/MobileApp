@@ -1,5 +1,6 @@
 package api;
 
+import com.example.myapplication.Models.GetAppModel;
 import com.example.myapplication.Models.GetLogsModel;
 import java.util.List;
 import retrofit2.Call;
@@ -15,5 +16,12 @@ public interface ApiService {
     })
     Call<List<GetLogsModel>> getLogs(@Query("appId") int appId);
 
-    
+    @GET("GetApps")
+    @Headers({
+            "accept: */*",
+            "x-api-key: x"
+    })
+    Call<List<GetAppModel>> getApps();
+
+
 }

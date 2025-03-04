@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:divider="@android:color/darker_gray"
+    android:dividerHeight="1dp">
+
+    <!-- ID aplikacji -->
+    <TextView
+        android:id="@+id/tvAppId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="ID"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="4dp"/>
+
+    <!-- Nazwa aplikacji -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:textColor="@android:color/black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Nazwa"
+        android:textSize="16sp"
+        android:padding="4dp"/>
+</LinearLayout>

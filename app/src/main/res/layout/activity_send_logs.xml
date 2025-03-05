@@ -38,7 +38,10 @@
 
     <Button
         android:id="@+id/buttonSendLogs"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Secondary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wyślij log" />
+        android:backgroundTint="#2596BE"
+        android:text="Send log"
+        android:textColor="@color/white" />
 </LinearLayout>

@@ -27,12 +27,15 @@
         <!-- Przycisk "Fetch Apps" po prawej -->
         <Button
             android:id="@+id/btnFetchApps"
+            style="@style/Widget.Material3.ExtendedFloatingActionButton.Secondary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fetch Apps"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginEnd="8dp"/>
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#198754"
+            android:text="Fetch Apps"
+            android:textColor="@color/white" />
     </RelativeLayout>
 
     <LinearLayout

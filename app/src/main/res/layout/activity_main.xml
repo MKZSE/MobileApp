@@ -10,57 +10,66 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="?attr/colorPrimary"
+        android:layout_height="100dp"
+        android:background="@color/toolbarColor"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
+        app:titleTextAppearance="@style/ToolbarTitle"
         app:layout_constraintTop_toTopOf="parent"
         app:title="Admin Panel"
-        app:titleMargin="8dp"
+        app:titleMargin="15dp"
         app:titleTextColor="#FAFAFB"
         tools:layout_editor_absoluteX="1dp" />
 
     <Button
         android:id="@+id/sendlogs"
-        style="@style/Widget.AppCompat.Button.Colored"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Primary"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
-        android:backgroundTint="@color/black"
+        android:textSize="20sp"
+        android:backgroundTint="#2596BE"
         android:text="Send Logs"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <Button
         android:id="@+id/getapps"
-        style="@style/Widget.AppCompat.Button.Colored"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Secondary"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#198754"
+        android:textSize="20sp"
         android:text="Get Apps"
+        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sendlogs" />
 
     <Button
         android:id="@+id/getlogs"
-        style="@style/Widget.AppCompat.Button.Colored"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Secondary"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#6C757D"
+        android:textSize="20sp"
         android:text="Get Logs"
+        android:textColor="#FFFFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <Button
         android:id="@+id/addapplication"
-        style="@style/Widget.AppCompat.Button.Colored"
+        style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Secondary"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_marginTop="100dp"
-        android:backgroundTint="@color/black"
-        android:text="Add New Application"
+        android:backgroundTint="#DC3545"
+        android:textSize="20sp"
+        android:text="Add New App"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/getlogs" />
 </androidx.constraintlayout.widget.ConstraintLayout>

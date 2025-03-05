@@ -27,10 +27,10 @@ public class LogsAdapter extends RecyclerView.Adapter<LogsAdapter.LogViewHolder>
     public void onBindViewHolder(LogViewHolder holder, int position) {
         GetLogsModel log = logs.get(position);
 
-        // Ustawienie wartości z modelu w odpowiednich TextView
-        holder.logId.setText(String.valueOf(log.getId())); // Przypisanie ID logu
-        holder.logDate.setText(log.getDate()); // Przypisanie daty logu
-        holder.logMessage.setText(log.getMessage()); // Przypisanie wiadomości logu
+
+        holder.logId.setText(String.valueOf(log.getId()));
+        holder.logDate.setText(log.getDate());
+        holder.logMessage.setText(log.getMessage());
     }
 
 
@@ -39,10 +39,10 @@ public class LogsAdapter extends RecyclerView.Adapter<LogsAdapter.LogViewHolder>
         return logs.size();
     }
 
-    // Metoda do aktualizacji logów
+
     public void setLogs(List<GetLogsModel> logs) {
         this.logs = logs;
-        notifyDataSetChanged();  // Powiadamia adapter, że dane się zmieniły
+        notifyDataSetChanged();
     }
 
     public static class LogViewHolder extends RecyclerView.ViewHolder {

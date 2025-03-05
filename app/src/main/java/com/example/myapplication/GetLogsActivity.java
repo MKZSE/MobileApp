@@ -37,25 +37,25 @@ public class GetLogsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_logs);
 
-        // Inicjalizacja widoków
+
         recyclerView = findViewById(R.id.logsRecyclerView);
         appSpinner = findViewById(R.id.appSpinner);
         downloadLogsButton = findViewById(R.id.downloadLogsButton);
         noLogsMessage = findViewById(R.id.noLogsMessage);
 
-        // Inicjalizacja RecyclerView
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new LogsAdapter(new ArrayList<>());
         recyclerView.setAdapter(adapter);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
 
-        // Inicjalizacja API
+
         apiService = ApiClient.getClient().create(ApiService.class);
 
-        // Pobranie listy aplikacji do Spinnera
+
         loadApps();
 
-        // Obsługa przycisku pobierania logów
+
         downloadLogsButton.setOnClickListener(v -> fetchLogs());
     }
 
@@ -89,7 +89,7 @@ public class GetLogsActivity extends AppCompatActivity {
             return;
         }
 
-        // Pobranie ID wybranej aplikacji
+
         int selectedIndex = appSpinner.getSelectedItemPosition();
         int appId = appList.get(selectedIndex).getId();
 

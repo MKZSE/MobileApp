@@ -13,7 +13,7 @@ public class ApiRepository {
 
     public ApiRepository() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://erponeupdator.masterdev.pl/Masterdev_Updater/") // Zmień na swój URL
+                .baseUrl("https://erponeupdator.masterdev.pl/Masterdev_Updater/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 

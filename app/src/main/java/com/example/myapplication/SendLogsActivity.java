@@ -20,7 +20,7 @@ public class SendLogsActivity extends AppCompatActivity {
     private EditText messageInput;
     private Button sendButton;
     private ApiRepository apiRepository;
-    private List<GetAppModel> appList = new ArrayList<>(); // Inicjalizacja pustej listy
+    private List<GetAppModel> appList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,14 +32,14 @@ public class SendLogsActivity extends AppCompatActivity {
         sendButton = findViewById(R.id.buttonSendLogs);
         apiRepository = new ApiRepository();
 
-        // Pobierz aplikacje z API
+
         fetchApps();
 
-        // Obsługa przycisku wysyłania logów
+
         sendButton.setOnClickListener(v -> sendLogs());
     }
 
-    // Pobieranie listy aplikacji z API
+
     private void fetchApps() {
         apiRepository.getApps(new ApiRepository.ApiAppsCallback() {
             @Override
@@ -55,7 +55,7 @@ public class SendLogsActivity extends AppCompatActivity {
         });
     }
 
-    // Aktualizacja Spinnera po pobraniu aplikacji
+
     private void updateSpinner() {
         List<String> appNames = new ArrayList<>();
         for (GetAppModel app : appList) {
@@ -67,7 +67,7 @@ public class SendLogsActivity extends AppCompatActivity {
         appSpinner.setAdapter(adapter);
     }
 
-    // Wysyłanie logów po ID aplikacji
+
     private void sendLogs() {
         if (appList.isEmpty()) {
             Toast.makeText(this, "Brak aplikacji do wybrania", Toast.LENGTH_SHORT).show();

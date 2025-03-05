@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:paddingBottom="8dp">
 
-        <!-- Tytuł "Get Apps" po lewej -->
+        <!-- Tytuł "Get Apps" -->
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
@@ -24,7 +24,7 @@
             android:layout_centerVertical="true"
             android:paddingStart="8dp"/>
 
-        <!-- Przycisk "Fetch Apps" po prawej -->
+        <!-- Przycisk "Fetch Apps" -->
         <Button
             android:id="@+id/btnFetchApps"
             style="@style/Widget.Material3.ExtendedFloatingActionButton.Secondary"
@@ -67,7 +67,7 @@
             android:textStyle="bold"
             android:padding="4dp"/>
     </LinearLayout>
-    <!-- RecyclerView do wyświetlania danych -->
+    <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewApps"
         android:layout_width="match_parent"

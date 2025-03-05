@@ -29,7 +29,7 @@ public class AddNewApplicationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_new_application);
 
-        // Inicjalizacja widoków
+
         appnameEditText = findViewById(R.id.appnameEditText);
         directorynameEditText = findViewById(R.id.directorynameEditText);
         addresEditText = findViewById(R.id.addresEditText);
@@ -38,9 +38,9 @@ public class AddNewApplicationActivity extends AppCompatActivity {
         pgsqlConnectionStringEditText = findViewById(R.id.pgsqlConnectionStringEditText);
         addApplicationButton = findViewById(R.id.addApplicationButton);
 
-        // Obsługa kliknięcia przycisku
+
         addApplicationButton.setOnClickListener(v -> {
-            // Pobierz dane z formularza
+
             String appname = appnameEditText.getText().toString();
             String directoryname = directorynameEditText.getText().toString();
             String addres = addresEditText.getText().toString();
@@ -48,14 +48,14 @@ public class AddNewApplicationActivity extends AppCompatActivity {
             String iisAppPoolName = iisAppPoolNameEditText.getText().toString();
             String pgsqlConnectionString = pgsqlConnectionStringEditText.getText().toString();
 
-            // Walidacja pól (opcjonalnie)
+
             if (appname.isEmpty() || directoryname.isEmpty() || addres.isEmpty() || iisAppName.isEmpty() ||
                     iisAppPoolName.isEmpty() || pgsqlConnectionString.isEmpty()) {
                 Toast.makeText(this, "Wszystkie pola muszą być wypełnione", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            // Wykonaj zapytanie POST
+
             new Thread(() -> {
                 try {
                     sendPostRequest(appname, directoryname, addres, iisAppName, iisAppPoolName, pgsqlConnectionString);

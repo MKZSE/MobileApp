@@ -57,7 +57,7 @@ public class GetAppsActivity extends AppCompatActivity {
             public void onResponse(@NonNull Call<List<GetAppModel>> call, @NonNull Response<List<GetAppModel>> response) {
                 if (response.isSuccessful() && response.body() != null) {
                     List<GetAppModel> apps = response.body();
-                    adapter.setApps(apps); // Aktualizacja listy w adapterze
+                    adapter.setApps(apps);
                 } else {
                     Log.e("GetAppsActivity", "Błąd odpowiedzi API: " + response.code());
                 }

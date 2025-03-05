@@ -52,6 +52,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonAddNewApp = findViewById(R.id.addapplication);
+
+
+        buttonAddNewApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, AddNewApplicationActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

@@ -23,5 +23,14 @@ public interface ApiService {
     })
     Call<List<GetAppModel>> getApps();
 
+    @GET("SendLogs")
+    @Headers({
+            "accept: */*",
+            "x-api-key: x"
+    })
+    Call<Void> sendLogs(
+            @Query("appId") int appId,
+            @Query("message") String message
+    );
 
 }

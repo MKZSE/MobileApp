@@ -71,9 +71,9 @@ public class AddNewApplicationActivity extends AppCompatActivity {
 
 
         String urlString = "https://erponeupdator.masterdev.pl/Masterdev_Updater/AddNewApplication" +
-                "?appName=" + appname +
+                "?appname=" + appname +
                 "&directoryname=" + directoryname +
-                "&addres=" + addres +
+                "&address=" + addres +
                 "&iisAppName=" + iisAppName +
                 "&iisAppPoolName=" + iisAppPoolName +
                 "&pgsqlConnectionString=" + pgsqlConnectionString;

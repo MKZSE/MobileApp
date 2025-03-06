@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.myapplication.GetLogsActivity;
 import com.example.myapplication.R;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Button buttonGetLogs = findViewById(R.id.getlogs);
+        CardView buttonGetLogs = findViewById(R.id.getlogs);
 
 
         buttonGetLogs.setOnClickListener(new View.OnClickListener() {
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button buttonGetApps = findViewById(R.id.getapps);
+        CardView buttonGetApps = findViewById(R.id.getapps);
 
 
         buttonGetApps.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button buttonSendLogs = findViewById(R.id.sendlogs);
+        CardView buttonSendLogs = findViewById(R.id.sendlogs);
 
 
         buttonSendLogs.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button buttonAddNewApp = findViewById(R.id.addapplication);
+        CardView buttonAddNewApp = findViewById(R.id.addapplication);
 
 
         buttonAddNewApp.setOnClickListener(new View.OnClickListener() {

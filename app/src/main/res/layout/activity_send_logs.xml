@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/cut_card_background2"
     tools:context=".MainActivity">
 <LinearLayout
     android:layout_width="match_parent"
@@ -17,6 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send Logs"
+        android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="16dp"
@@ -26,6 +27,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="Select app:" />
 
     <Spinner
@@ -33,6 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="48dp"
+        android:background="@color/white"
         android:spinnerMode="dropdown" />
 
 
@@ -41,6 +44,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Wpisz log"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
         android:inputType="text"
         android:minHeight="48dp" />
 
@@ -51,6 +56,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#2596BE"
         android:text="Send log"
+        android:layout_marginTop="10dp"
         android:textColor="@color/white" />
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

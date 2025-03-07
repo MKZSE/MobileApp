@@ -13,9 +13,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="ID:" />
     <TextView
         android:id="@+id/tvId"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ID" />
@@ -27,9 +29,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="DATE: " />
     <TextView
         android:id="@+id/tvDate"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Data" />
@@ -39,11 +43,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
+            android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="MESSAGE: " />
     <TextView
         android:id="@+id/tvMessage"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Wiadomość" />
